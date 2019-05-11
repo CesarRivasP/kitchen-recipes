@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { getRecipe} from '../mealdb-api';
-import RecipeIngredients from '../components/RecipeIngredients';
-import RecipeInstructions from '../components/RecipeInstructions';
+import RecipeIngredients from '../components/recipe-ingredients';
+import RecipeInstructions from '../components/recipe-instructions';
 
 
 class Recipe extends Component {
