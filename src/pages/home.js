@@ -17,6 +17,8 @@ class Home extends Component {
     let recipes;
     try {
       recipes = await getLatest();
+      console.log('recipes');
+      console.log(recipes);
     }
     catch(error){
       console.log(error);
