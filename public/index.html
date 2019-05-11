@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel='apple-touch-icon' href='/static/icon.png' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="orange" />
+
+    <!-- Elementos de metadata propios de ios -->
+
+    <!-- ES el icono que se va a utilizar en IOS   -->
+    <!--  General mente se usa un icono para IOS y otro para Android -->
+    <link rel='apple-touch-icon' href='/static/icon.png' />
+    <!-- titulo de la aplicacion declarado en el manifest -->
     <meta name='apple-mobile-web-app-title' content='PlatziRecetas' />
+    <!-- ESta variable tiene que ver con que si se quiere correr la app en full screen -->
     <meta name='apple-mobile-web-app-capable' content='no' />
+    <!-- Para indicar el estilo de la status var -->
     <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
     <!--
       manifest.json provides metadata used when your web app is installed on a
