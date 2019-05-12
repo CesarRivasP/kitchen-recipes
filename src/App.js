@@ -5,6 +5,7 @@ import { createBrowserHistory } from 'history'
 import Home from './pages/home'
 import Recipe from './pages/recipe'
 import Timer from './pages/timer'
+import IfOffLine from './components/if-offline'
 import './App.css';
 
 // Creacion del plugin para la historia del browser
@@ -27,7 +28,7 @@ class App extends Component {
     return (
       <Router history={history}>
         <header>
-          <Link to="/">Recetas</Link>
+          <Link to="/">Recetas <IfOffLine>Offline</IfOffLine></Link>
         </header>
 
         <main>
