@@ -1,5 +1,5 @@
-// Esto tiene la configuracion minima y necesaria para que funcione el service worker
-const {defaultInjectConfig, rewireWorkboxInject} = require('react-app-rewire-workbox')
+// Esto tiene la configuracion minima y necesaria para que funcione el service worker custom
+const { defaultInjectConfig, rewireWorkboxInject } = require('react-app-rewire-workbox')
 const path = require('path');
 
 module.exports = function override(config, env) {
@@ -7,6 +7,7 @@ module.exports = function override(config, env) {
     console.log("Generating Service Worker")
 
     const workboxConfig = {
+      // inyecta la configuracion por defecto
       ...defaultInjectConfig, //tiene que ver con el modulo de pre-caching
       swSrc: path.join(__dirname, 'src', 'service-worker.js')
     }
