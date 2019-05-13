@@ -31,7 +31,7 @@ class Timer extends Component {
       return alert('Bloqueaste las notificaciones');
     }
 
-    if(Notification.permission !== 'granted'){ //granted es cuando tienes el permiso
+    if(Notification.permission !== 'granted'){ //granted es cuando tienes el permiso para enviar notificaciones
       return;
     }
 
@@ -46,7 +46,7 @@ class Timer extends Component {
         clearInterval(countDownInterval);
         this.showNotification();
       }
-    })
+    }, 1000)
   }
 
   showNotification = async () => {
@@ -59,9 +59,9 @@ class Timer extends Component {
     if(! registration) return alert('No hay un service worker');
 
     // enviar la notificacion
-    registration.showNotification("Listo el timer", {
-      body: 'Ding Ding', //emular una alarma
-      img: '/icon.png'
+    registration.showNotification("Listo el timer", { //argumento de opciones
+      body: 'Ding Ding', // emular una alarma- texto aclaratorio
+      img: '/icon.png'  //icono que se va a mostrar en las notificaiones
     })
   }
 
