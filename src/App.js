@@ -27,16 +27,18 @@ class App extends Component {
   render(){
     return (
       <Router history={history}>
-        <header>
-          <Link to="/">Recetas <IfOffLine>Offline</IfOffLine></Link>
-          <Link to="/timer" className="timerLink">⏱</Link>
-        </header>
+        <div>  
+          <header>
+            <Link to="/">Recetas <IfOffLine>Offline</IfOffLine></Link>
+            <Link to="/timer" className="timerLink">⏱</Link>
+          </header>
 
-        <main>
-          <Route exact path="/" component={Home} />
-          <Route path="/recipe/:recipeID" component={Recipe} />
-          <Route path="/timer" component={Timer} />
-        </main>
+          <main>
+            <Route exact path="/" component={Home} />
+            <Route path="/recipe/:recipeID" component={Recipe} />
+            <Route path="/timer" component={Timer} />
+          </main>
+        </div>
       </Router>
     );
   }
