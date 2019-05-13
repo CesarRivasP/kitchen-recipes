@@ -9,7 +9,7 @@ PWA que utiliza la API de MealDB para mostrar recetas con sus instrucciones. Alg
 * Add to Home Screen
 * Web Share API
 
-[Ver la app en producción]
+[Ver la app en producción](https://kitchen-recipes.cesarjose58.now.sh/)
 
 ## scripts
 
