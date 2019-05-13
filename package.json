@@ -16,10 +16,11 @@
   },
   "scripts": {
     "dev": "react-app-rewired start",
-    "start": "serve ./build -s -p ${PORT:-4000}",
-    "build": "react-app-rewired  build",
+    "start": "serve ./build -s -p ${PORT:-5000}",
+    "build": "react  build",
     "test": "react-app-rewired  test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "now-build": "react-app-rewired build"
   },
   "eslintConfig": {
     "extends": "react-app"
