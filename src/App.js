@@ -29,6 +29,7 @@ class App extends Component {
       <Router history={history}>
         <header>
           <Link to="/">Recetas <IfOffLine>Offline</IfOffLine></Link>
+          <Link to="/timer" className="timerLink">⏱</Link>
         </header>
 
         <main>
